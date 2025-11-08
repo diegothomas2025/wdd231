@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!------------------------------ SCRIPTS ------------------------------>
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     <!------------------------------ FONTS ------------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="images/computer.svg" alt="logo site" width="512" height="512">
-        <span>Thomas Web</span>
+        <span>THOMAS WEB</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-    <nav>
+    <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="#">Chamber Project</a></li>
@@ -29,7 +34,7 @@
         <h1>Home</h1>
         <section class="card">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloremque voluptates assumenda earum autem ut, exercitationem vel qui? Non earum pariatur error optio esse sit, similique illum! Illum, eum error!</p>
+            <p>My name is Thomas, I'm 22 years old, and I was born in Buenos Aires, Argentina, which is a beautiful city. I really enjoy learning new things such as dancing, singing, and sports. I think that’s what led me to learn programming. Currently, I really like frontend development, and I am doing my best to improve my skills.</p>
         </section>
 
         <section class="card">
@@ -37,12 +42,23 @@
             <img src="images/profile.webp" alt="student photo" width="" height="">
         </section>
 
-        <section class="card">
+        <section class="card three">
             <h2>Web Certificate Courses</h2>
-            
+            <p id="totalCredits"></p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/dashboard" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="www.linkedin.com/in/thomas-gomez2002" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+            <a href="https://wa.me/+541137663738" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp" width="16" height="16"></a>
+            <a href="https://www.instagram.com/tomii_gomez_/?__pwa=1" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+        </div>
+        <div class="info">
+            <span id="currentyear"></span><br>
+            <span id="lastModified"></span>
+        </div>
+    </footer>
 
 
 </body>

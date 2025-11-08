@@ -3,6 +3,7 @@
         max-width: 900px;
         margin: 0 auto;
     }
+    /********************* HEADER *********************/
     header {
         grid-template-columns: 24px auto;
     }
@@ -19,5 +20,6 @@
     .navigation a {
         border: none;
     }
+    /********************* MAIN *********************/
     
 }
