@@ -194,6 +194,3 @@ footer {
     background-color: var(--primary-color);
     color: white;
 }
-.info span {
-    color: var(--secondary-color);
-}
