@@ -23,5 +23,7 @@
     .three {
         grid-area: 3 / 1 / 4 / 3;
     }
-    
+    .courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

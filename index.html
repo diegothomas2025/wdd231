@@ -12,6 +12,7 @@
     <!------------------------------ SCRIPTS ------------------------------>
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <!------------------------------ FONTS ------------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,15 @@
 
         <section class="card three">
             <h2>Web Certificate Courses</h2>
-            <p id="totalCredits"></p>
+
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courseContainer" class="courses"></div>
+
+            <p id="totalCredits">Total credits: 0</p>
         </section>
     </main>
     <footer>
