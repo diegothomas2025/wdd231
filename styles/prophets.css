@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --primary-color: #1E3A8A;
+    --secondary-color: #F97316;
+    --text-color: #374151;
+
+    /* FONTS */
+    --highlight: "Pacifico",'Times New Roman', Times, serif;
+    --heading: "Fjalla One",'Times New Roman', Times, serif;
+    --body: "Roboto",'Times New Roman', Times, serif;
+}
+
+/****************************** GENERAL STYLE ******************************/
+body {
+    background-color: white;
+    color: var(--text-color);
+    font-family: var(--body);
+}
+h1, h2, h3 {
+    font-family: var(--heading);
+    color: var(--primary-color);
+}
+
+/****************************** HEADER ******************************/
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+/****************************** MAIN ******************************/
+.cards {
+	display: grid;
+	grid-gap: .5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: rgba(128, 128, 128, 0.258);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 10px rgb(193, 193, 193);
+    padding: 1rem;
+    margin: .5rem;
+    text-align: center;
+}
+.cards section {
+    background-color: #b5bdd3bc;
+    border: 1px solid var(--primary-color);
+}
+.cards h2 {
+    text-align: center;
+    padding: 1rem;
+}
+.cards img {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+}
