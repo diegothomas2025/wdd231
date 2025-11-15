@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --primary-color: #1A73E8;
+    --secondary-color: #0D47A1;
+    --background-color: #F9FAFB;
+    --text-color: #212121;
+
+    /* FONTS */
+    --font-heading: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+/****************************** GENERAL STYLE ******************************/
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+}
+/************************** HEADER **************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 1rem 0 1rem 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+header span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/************************** HAMBURGER **************************/
+.hamburger {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hamburger::before {
+    content: "\2630";
+}
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/************************** NAVIGATION **************************/
+.navigation {
+    display: none;
+    background-color: var(--secondary-color);
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+.current {
+    background-color: rgb(73, 73, 73);
+}
+.navigation a:hover {
+    background-color: var(--primary-color);
+}
+
+
+h1 {
+    margin-left: 10px;
+}
+
+/************************** FOOTER **************************/
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem 10px;
+    text-align: center;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+.social img {
+    width: 22px;
+    height: 22px;
+}
+.social a:hover {
+    background-color: var(--primary-color);
+}
+.info span {
+    color: #fff;
+}

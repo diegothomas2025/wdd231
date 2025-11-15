@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Panadería El Trigal",
+    "address": "Av. San Martín 234, General Rodríguez",
+    "phone": "+54 11 4567 8901",
+    "website": "https://eltrigal.com",
+    "image": "trigal.png",
+    "membership": 3,
+    "description": "Panadería tradicional con más de 20 años en la ciudad."
+  },
+  {
+    "name": "Limpieza Total SRL",
+    "address": "Ruta 7 km 49.5, General Rodríguez",
+    "phone": "+54 11 2345 6789",
+    "website": "https://limpiezatotal.com",
+    "image": "limpieza.png",
+    "membership": 2,
+    "description": "Empresa de limpieza profesional para hogares y comercios."
+  },
+  {
+    "name": "Ferretería Los Andes",
+    "address": "Independencia 1200, General Rodríguez",
+    "phone": "+54 11 9876 5432",
+    "website": "https://ferreterialosandes.com",
+    "image": "ferreteria.png",
+    "membership": 1,
+    "description": "Proveedor local de herramientas y materiales."
+  },
+  {
+    "name": "Gym Power House",
+    "address": "Av. España 899, General Rodríguez",
+    "phone": "+54 11 3210 9876",
+    "website": "https://powerhousegym.com",
+    "image": "gym.png",
+    "membership": 3,
+    "description": "Gimnasio completo con clases dirigidas."
+  },
+  {
+    "name": "Veterinaria Huellitas",
+    "address": "Av. Italia 345, General Rodríguez",
+    "phone": "+54 11 2222 1111",
+    "website": "https://vethuellitas.com",
+    "image": "veterinaria.png",
+    "membership": 2,
+    "description": "Atención veterinaria y tienda para mascotas."
+  },
+  {
+    "name": "ElectroRodríguez",
+    "address": "Belgrano 455, General Rodríguez",
+    "phone": "+54 11 6655 4433",
+    "website": "https://electrorodriguez.com",
+    "image": "electro.png",
+    "membership": 3,
+    "description": "Venta y reparación de electrodomésticos."
+  },
+  {
+    "name": "Estudio Contable Martínez",
+    "address": "Sarmiento 1020, General Rodríguez",
+    "phone": "+54 11 7788 9900",
+    "website": "https://contablemartinez.com",
+    "image": "contable.png",
+    "membership": 1,
+    "description": "Servicios contables para emprendimientos locales."
+  }
+]
