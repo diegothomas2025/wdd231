@@ -13,7 +13,7 @@ const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=-34.60
 
 async function getWeather() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url);  
         const data = await response.json();
 
         temp.textContent = `${data.main.temp.toFixed(1)}°C`;
