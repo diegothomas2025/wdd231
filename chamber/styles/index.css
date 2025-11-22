@@ -1,0 +1,174 @@
+:root {
+    /* COLORS */
+    --primary-color: #1A73E8;
+    --secondary-color: #0D47A1;
+    --background-color: #F9FAFB;
+    --text-color: #212121;
+
+    /* FONTS */
+    --font-heading: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+/****************************** HERO SECTION ******************************/
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-content {
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    padding: 1rem;
+    border-radius: 6px;
+}
+.cta-btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+}
+.cta-btn:hover {
+    background-color: var(--primary-color);
+}
+
+/****************************** EVENTS + WEATHER CONTAINER ******************************/
+.events-weather {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.events, .weather {
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.events li {
+    list-style-type: none;
+}
+.events h2, .weather h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/****************************** WEATHER INTERNAL STYLES ******************************/
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.current-weather img {
+    width: 80px;
+}
+.current-weather p {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+}
+/****************************** Forecast ******************************/
+.forecast {
+    margin-top: 1.5rem;
+}
+.forecast-days {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.forecast-days div {
+    border-radius: 10px;
+    padding: 1rem;
+    width: 80px;
+}
+.forecast-days p {
+    margin: 0.3rem 0;
+    font-weight: bold;
+}
+
+/****************************** SPOTLIGHTS ******************************/
+.spotlights {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 1200px;
+}
+.spotlights h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#spotlight-container {
+    display: grid;
+    gap: 1.5rem;
+}
+.spotlight-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.spotlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.spotlight-card img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+}
+.spotlight-card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+.spotlight-card .membership {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #222;
+}
+
+/****************************** MEDIA QUERIES ******************************/
+@media (min-width: 600px) {
+    #spotlight-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .current-weather {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* EVENTS */
+    .events-weather {
+        flex-direction: row;
+    }
+    .events, .weather {
+        flex: 1;
+    }
+}

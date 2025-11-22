@@ -19,3 +19,11 @@
     align-items: center;
     gap: 1rem;
 }
+
+.member-card img {
+    width: 80px;   
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 6px;
+}

@@ -4,7 +4,7 @@
     "address": "Av. San Martín 234, General Rodríguez",
     "phone": "+54 11 4567 8901",
     "website": "https://eltrigal.com",
-    "image": "trigal.png",
+    "image": "trigal.svg",
     "membership": 3,
     "description": "Panadería tradicional con más de 20 años en la ciudad."
   },
@@ -13,7 +13,7 @@
     "address": "Ruta 7 km 49.5, General Rodríguez",
     "phone": "+54 11 2345 6789",
     "website": "https://limpiezatotal.com",
-    "image": "limpieza.png",
+    "image": "limpieza.svg",
     "membership": 2,
     "description": "Empresa de limpieza profesional para hogares y comercios."
   },
@@ -22,7 +22,7 @@
     "address": "Independencia 1200, General Rodríguez",
     "phone": "+54 11 9876 5432",
     "website": "https://ferreterialosandes.com",
-    "image": "ferreteria.png",
+    "image": "ferreteria.svg",
     "membership": 1,
     "description": "Proveedor local de herramientas y materiales."
   },
@@ -31,7 +31,7 @@
     "address": "Av. España 899, General Rodríguez",
     "phone": "+54 11 3210 9876",
     "website": "https://powerhousegym.com",
-    "image": "gym.png",
+    "image": "gym.svg",
     "membership": 3,
     "description": "Gimnasio completo con clases dirigidas."
   },
@@ -40,7 +40,7 @@
     "address": "Av. Italia 345, General Rodríguez",
     "phone": "+54 11 2222 1111",
     "website": "https://vethuellitas.com",
-    "image": "veterinaria.png",
+    "image": "veterinaria.svg",
     "membership": 2,
     "description": "Atención veterinaria y tienda para mascotas."
   },
@@ -49,7 +49,7 @@
     "address": "Belgrano 455, General Rodríguez",
     "phone": "+54 11 6655 4433",
     "website": "https://electrorodriguez.com",
-    "image": "electro.png",
+    "image": "electro.svg",
     "membership": 3,
     "description": "Venta y reparación de electrodomésticos."
   },
@@ -58,7 +58,7 @@
     "address": "Sarmiento 1020, General Rodríguez",
     "phone": "+54 11 7788 9900",
     "website": "https://contablemartinez.com",
-    "image": "contable.png",
+    "image": "contable.svg",
     "membership": 1,
     "description": "Servicios contables para emprendimientos locales."
   }
