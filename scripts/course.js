@@ -124,4 +124,3 @@ document.querySelector("#wdd").addEventListener("click", () => {
 });
 
 displayCourses(courses);
-    

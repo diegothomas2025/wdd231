@@ -162,7 +162,26 @@ main h1 {
 #totalCredits {
     text-align: center;
 }
+/****************************** DIALOG ******************************/
+dialog {
+    padding: 1rem;
+    width: 400px;
+    height: 300px;
+    background-color: darkgray;
+    border: 1px solid black;
+}
 
+dialog::backdrop {
+    background-color: darkblue;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 1rem;
+    border: 1px solid black;
+}
 
 /****************************** FOOTER ******************************/
 footer {
