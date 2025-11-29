@@ -1,0 +1,90 @@
+.join-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    padding: .6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card h3 {
+    margin-bottom: .5rem;
+}
+
+.card a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* DIALOG */
+dialog {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+}
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    margin: 1rem auto;
+    padding: .3rem;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; transform: translateY(10px);
+        }
+    to { 
+        opacity: 1; transform: translateY(0);
+    }
+}
+
+@media only screen and (min-width: 38rem) {
+    .join-container {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        align-items: start;
+    }
+}

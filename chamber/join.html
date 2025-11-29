@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
     <!-- SCRIPTS -->
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/getdate.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <!-- FONTS -->
@@ -36,12 +37,75 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Discover</a></li>
-            <li><a href="directory.html" class="current">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="current">Join</a></li>
         </ul>
     </nav>
     <main>
-       
+        <h1>Membership Application</h1>
+        <section class="join-container">
+            <!-- form -->
+            <form method="get" action="thankyou.html" id="join-form">
+                <!-- Name -->
+                <label>First Name<input type="text" name="fname" title="First Name" required autocomplete="given-name"></label>
+                <!-- Last Name -->
+                <label>Last Name<input type="text" name="lname" title="Last Name" required autocomplete="family-name"></label>
+                <!-- Organization Title -->
+                <label>Organizational Title<input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" placeholder="At least 7 letters" required></label>
+                <!-- Email -->
+                <label>Email<input type="email" name="email" title="Email" required autocomplete="email" placeholder="example@mail.com"></label>
+                <!-- Mobile Phone -->
+                <label>Mobile Phone<input type="tel" name="phone" title="Mobile Phone" required autocomplete="tel-national"></label>
+                <!-- Business -->
+                <label>Business / Organizational Name <input type="text" name="organization" title="Organization Name" required autocomplete="organization"></label>
+                <!-- Membership Level -->
+                <label>Membership Level
+                    <select name="membership" title="Membership Level">
+                        <option value="np">NP (Non Profit)</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+                <!-- Business Description -->
+                 <label>Business Description
+                    <textarea name="description" title="Business Description"></textarea>
+                 </label>
+
+                 <input type="hidden" name="timestamp" id="timestamp">
+
+                 <input type="submit" value="submit Application">
+            </form>
+
+            <!-- CARDS -->
+             <aside class="membership-cards">
+                <div class="card" data-modal="np-modal">
+                    <h3>NP Membership</h3>
+                    <button id="openButtonNp">More Info</button>
+                </div>
+
+                <div class="card" data-modal="bronze-modal">
+                    <h3>Bronze Membership</h3>
+                    <button id="openButtonBronze">More Info</button>
+                </div>
+
+                <div class="card" data-modal="silver-modal">
+                    <h3>Silver Membership</h3>
+                    <button id="openButtonSilver">More Info</button>
+                </div>
+
+                <div class="card" data-modal="gold-modal">
+                    <h3>Gold Membership</h3>
+                    <button id="openButtonGold">More Info</button>
+                </div>
+             </aside>
+        </section>
+
+        <!-- Modals -->
+         <dialog id="dialogBox">
+             <div id="dialogBoxText"></div>
+            <button id="closeButton">Close</button>
+         </dialog>
     </main>
     <footer>
         <div class="social">
