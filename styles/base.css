@@ -1,0 +1,42 @@
+
+/******************************* HEADER *******************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px; /*44 is the minimum touch size for a handheld device, ham btn*/
+    padding: 5px 0 5px 10px;
+    border-bottom: solid 1px #ddd;
+    align-items: end;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: darkblue;
+}
+
+/******************************* HAMBURGER BTN *******************************/
+.hamburger {
+    border: none;
+    background: none;
+    color: darkblue;
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+/******************************* NAVIGATION *******************************/

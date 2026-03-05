@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!----------------------------- CSS ----------------------------->
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!----------------------------- SCRIPTS ----------------------------->
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <h1>WDD231 - Thomas Gomez</h1>
+    <header>
+        <img src="images/code-simple.svg" alt="Site Logo" width="512" height="512">
+        <span>Thomas Gomez</span>
+        <button id="ham-button" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a class="current" href="#">News and Events</a></li>
+            <li><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
