@@ -10,5 +10,18 @@
     .hamburger {
         display: none;
     }
+    /******************************* NAVIGATION *******************************/
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
     
 }
