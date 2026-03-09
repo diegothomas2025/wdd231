@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     /* COLORS */
     --primary-color: #1E3A8A;
@@ -15,7 +21,7 @@ body {
     font-family: var(--body);
     color: var(--text-color);
 }
-h1 {
+h1, header span {
     font-family: var(--highlight);
     color: var(--primary-color);
 }
@@ -25,3 +31,83 @@ h2 {
 }
 
 /******************************* HEADER *******************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    column-gap: 8px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+}
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+header span {
+    font-size: 1.2rem;
+}
+
+/******************************* HAMBURGER BTN *******************************/
+.hamburger {
+    border: none;
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+/******************************* NAVIGATION BAR *******************************/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+}
+.navigation a { 
+    display: block;
+    padding: .9rem 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: solid 1px darkgray;
+}
+.navigation .current {
+    background-color: #ddd;
+}
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+/******************************* MAIN *******************************/
+main {
+    margin: 0 10px;
+}
+section h2 {
+    color: #ddd;
+    padding: .5rem 0;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+section {
+    background-color: darkgray;
+    margin: 1rem 0;
+}
+
+/******************************* ABOUT *******************************/
+.about p {
+    padding: 1rem 10px;
+}
+.student img {
+    width: 100%;
+    height: auto;
+}

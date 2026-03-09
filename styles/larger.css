@@ -1,0 +1,25 @@
+@media only screen and (min-width: 38rem) {
+    header, nav, main, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    /******************************* HEADER *******************************/
+    header {
+        grid-template-columns: 24px auto;
+    }
+    /******************************* HAM BTN *******************************/
+    .hamburger {
+        display: none;
+    }
+    /******************************* NAV BAR *******************************/
+    .navigation {
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation li {
+        flex: 1 1 100%;
+    }
+    
+}
