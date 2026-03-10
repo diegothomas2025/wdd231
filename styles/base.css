@@ -99,7 +99,7 @@ section h2 {
     background-color: var(--primary-color);
 }
 section {
-    background-color: darkgray;
+    background-color: rgba(128, 128, 128, 0.258);
     margin: 1rem 0;
 }
 
@@ -108,6 +108,39 @@ section {
     padding: 1rem 10px;
 }
 .student img {
-    width: 100%;
+    display: block;
+    width: 260px;
     height: auto;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+/******************************* FOOTER *******************************/
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    color: var(--primary-color);
+}
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    padding: .7rem 0;
+
+}
+.social a {
+    display: flex;
+    justify-content: center; /* left to right / using flex */
+    align-items: center;/* top to bottom / using flex */
+    width: 54px;
+    height: 54px;
+    border: solid 1px #ccc;
+    border-radius: 44px;
+}
+.social img {
+    width: 32px;
+    height: 32px;
+}
+.social a:hover {
+    background-color: var(--secondary-color);
 }
