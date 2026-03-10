@@ -79,45 +79,50 @@ const courses = [
 ]
 
 // ALL COURSES
+const allButton = document.querySelector('#all-btn');
 const container = document.querySelector('#courses-card');
-courses.forEach(course => {
 
-    
-    const card = document.createElement('div');
-    card.innerHTML = `
+displayCourses(courses)
+
+/*
+    Function to display courses
+    1. Clean container
+    2. Create Cards
+    3. Append Cards
+*/
+function displayCourses(courseList) {
+    container.innerHTML = '';
+    courseList.forEach(course => {
+        const card = document.createElement('div');
+        card.innerHTML = `
         <p>${course.subject} ${course.number}</p>
-    `;
+        `;
+        container.appendChild(card);
+    });
 
-    container.appendChild(card);
+    const totalCredits = courseList.reduce((initial, course) => initial + course.credits, 0);
+    document.querySelector('#totalCredits').textContent = `The total credits for course listed above is ${totalCredits}`;
+};
+
+/*------------------------------------------ALL BTN------------------------------------------ */
+allButton.addEventListener('click', () => {
+    displayCourses(courses);
 });
 
-// totalCredits
-const totalCredits = courses.reduce((initial, course) => initial + course.credits, 0);
-document.querySelector('#totalCredits').textContent = `The total credits for course listed above is ${totalCredits}`;
-
-// ----------------------------------------------------------
-// CSE COURSES
-const cseButton = document.querySelector('#cse-btn');
+/*------------------------------------------CSE BTN------------------------------------------ */
+const cseButton = document.querySelector('#cse-btn'); 
 
 cseButton.addEventListener('click', () => {
-    
-
+    let cseCourses = courses.filter(course => course.subject === 'CSE'); // filter cse
+    displayCourses(cseCourses)
 });
 
-// filter cse
-let cse = courses.filter(course => course.subject === 'CSE');
-console.log(cse);
+/*------------------------------------------WDD BTN------------------------------------------ */
+const wddButton = document.querySelector('#wdd-btn'); 
+
+wddButton.addEventListener('click', () => {
+    const wddCourses = courses.filter(course => course.subject === 'WDD'); // filter wdd
+    displayCourses(wddCourses)
+});
 
 
-// ---------------------------------------------------WDD
-// filter wdd
-let wdd = courses.filter(course => course.subject === 'WDD');
-console.log(wdd);
-
-// suma
-let prueba = wdd[0].credits + wdd[1].credits + wdd[2].credits;
-console.log(prueba)
-
-// suma with reduce method
-// const totalCredits = wdd.reduce((initial, course) => initial + course.credits, 0);
-// console.log(totalCredits);
