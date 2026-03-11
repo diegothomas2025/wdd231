@@ -34,17 +34,20 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>My name is Thomas, I'm 22 years old, and I was born in Buenos Aires, Argentina, which is a beautiful city. I really enjoy learning new things such as dancing, singing, and sports. I think that’s what led me to learn programming. Currently, I really like frontend development, and I am doing my best to improve my skills.</p>
-        </section>
         
-        <section class="student">
-            <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Thomas Gomez Photo" width="1" height="1">
-        </section>
+        <div class="grid-section">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>My name is Thomas, I'm 22 years old, and I was born in Buenos Aires, Argentina, which is a beautiful city. I really enjoy learning new things such as dancing, singing, and sports. I think that’s what led me to learn programming. Currently, I really like frontend development, and I am doing my best to improve my skills.</p>
+            </section>
 
-        <section>
+            <section class="student">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Thomas Gomez Photo" width="1" height="1">
+            </section>
+        </div>
+
+        <section class="courses">
             <h2>Web Certificate Courses</h2>
             <div class="buttons">
                 <button id="all-btn">All</button>
@@ -53,7 +56,7 @@
             </div>
             <div id="courses-card"></div>
             <div>
-                <p id="totalCredits"></p>
+                <p id="totalCredits" class="totalcredits"></p>
             </div>
         </section>
     </main>
@@ -63,8 +66,10 @@
             <a href="www.linkedin.com/in/thomas-gomez2002"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
             <a href="https://www.whatsapp.com/"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
         </div>
-        <span id="currentyear"></span>
-        <p id="lastModified"></p>
+        <div class="datejs">
+            <span id="currentyear"></span>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 </html>

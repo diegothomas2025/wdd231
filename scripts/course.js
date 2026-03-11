@@ -91,9 +91,19 @@ displayCourses(courses)
     3. Append Cards
 */
 function displayCourses(courseList) {
+
     container.innerHTML = '';
+
     courseList.forEach(course => {
+
         const card = document.createElement('div');
+
+        if (course.completed) {
+            card.classList.add('completed');
+        } else {
+            card.classList.add('not-completed')
+        }
+
         card.innerHTML = `
         <p>${course.subject} ${course.number}</p>
         `;
@@ -113,7 +123,7 @@ allButton.addEventListener('click', () => {
 const cseButton = document.querySelector('#cse-btn'); 
 
 cseButton.addEventListener('click', () => {
-    let cseCourses = courses.filter(course => course.subject === 'CSE'); // filter cse
+    let cseCourses = courses.filter(course => course.subject === 'CSE'); // filter cse subject
     displayCourses(cseCourses)
 });
 
@@ -121,7 +131,7 @@ cseButton.addEventListener('click', () => {
 const wddButton = document.querySelector('#wdd-btn'); 
 
 wddButton.addEventListener('click', () => {
-    const wddCourses = courses.filter(course => course.subject === 'WDD'); // filter wdd
+    const wddCourses = courses.filter(course => course.subject === 'WDD'); // filter wdd subject
     displayCourses(wddCourses)
 });
 

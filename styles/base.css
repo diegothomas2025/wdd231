@@ -80,6 +80,7 @@ header span {
     text-decoration: none;
     color: var(--primary-color);
     border-bottom: solid 1px darkgray;
+    
 }
 .navigation .current {
     background-color: #ddd;
@@ -103,7 +104,7 @@ section {
     margin: 1rem 0;
 }
 
-/******************************* ABOUT *******************************/
+/******************************* ABOUT SECTION *******************************/
 .about p {
     padding: 1rem 10px;
 }
@@ -115,9 +116,46 @@ section {
     padding: 15px 0;
 }
 
+/******************************* COURSES SECTION *******************************/
+.courses {
+    text-align: center;
+}
+.buttons {
+    margin: 10px 5px;
+    display: flex;
+    column-gap: 8px;
+}
+.buttons button {
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem;
+    flex: 1 1 100%;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: var(--secondary-color);
+}
+#courses-card p {
+    margin: 10px;
+    padding: .3rem 0;
+}
+.completed {
+    background-color: var(--primary-color);
+    color: white;
+}
+.not-completed {
+    background-color: var(--text-color);
+    color: white;
+}
+.totalcredits {
+    margin: 10px;
+}
+
 /******************************* FOOTER *******************************/
 footer {
-    padding: 1rem 10px;
+    margin: 0 10px;
     text-align: center;
     color: var(--primary-color);
 }
@@ -126,7 +164,6 @@ footer {
     justify-content: center;
     column-gap: 8px;
     padding: .7rem 0;
-
 }
 .social a {
     display: flex;
@@ -142,5 +179,10 @@ footer {
     height: 32px;
 }
 .social a:hover {
-    background-color: var(--secondary-color);
+    background-color: #b1b1b1;
+}
+.datejs {
+    padding: 1rem;
+    background-color: #1E3A8A;
+    color: white;
 }
