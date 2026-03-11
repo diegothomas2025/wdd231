@@ -100,7 +100,7 @@ section h2 {
     background-color: var(--primary-color);
 }
 section {
-    background-color: rgba(128, 128, 128, 0.258);
+    background-color: #dbd5d5;
     margin: 1rem 0;
 }
 
