@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Panadería El Trigal",
+        "address": "Av. San Martín 234, General Rodríguez",
+        "phone": "+54 11 4567 8901",
+        "website": "https://eltrigal.com",
+        "image": "trigal.svg",
+        "membership": 3
+    },
+    {
+        "name": "Limpieza Total SRL",
+        "address": "Ruta 7 km 49.5, General Rodríguez",
+        "phone": "+54 11 2345 6789",
+        "website": "https://limpiezatotal.com",
+        "image": "limpieza.svg",
+        "membership": 2
+    },
+    {
+        "name": "Ferretería Los Andes",
+        "address": "Independencia 1200, General Rodríguez",
+        "phone": "+54 11 9876 5432",
+        "website": "https://ferreterialosandes.com",
+        "image": "ferreteria.svg",
+        "membership": 1
+    },
+    {
+        "name": "Gym Power House",
+        "address": "Av. España 899, General Rodríguez",
+        "phone": "+54 11 3210 9876",
+        "website": "https://powerhousegym.com",
+        "image": "gym.svg",
+        "membership": 3
+    },
+    {
+        "name": "Veterinaria Huellitas",
+        "address": "Av. Italia 345, General Rodríguez",
+        "phone": "+54 11 2222 1111",
+        "website": "https://vethuellitas.com",
+        "image": "veterinaria.svg",
+        "membership": 2
+    },
+    {
+        "name": "ElectroRodríguez",
+        "address": "Belgrano 455, General Rodríguez",
+        "phone": "+54 11 6655 4433",
+        "website": "https://electrorodriguez.com",
+        "image": "electro.svg",
+        "membership": 3
+    },
+    {
+        "name": "Estudio Contable Martínez",
+        "address": "Sarmiento 1020, General Rodríguez",
+        "phone": "+54 11 7788 9900",
+        "website": "https://contablemartinez.com",
+        "image": "contable.svg",
+        "membership": 1
+    }
+]

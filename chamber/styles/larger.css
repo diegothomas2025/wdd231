@@ -1,0 +1,21 @@
+@media only screen and (min-width: 38rem) {
+    /******************************* HEADER *******************************/
+    header {
+        grid-template-columns: 24px auto;
+    }
+    /******************************* HAMBURGER *******************************/
+    .hamburger {
+        display: none;
+    }
+    /******************************* NAVIGATION *******************************/
+    .navigation {
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation li {
+        flex: 1 1 100%;
+    }
+    
+}
