@@ -23,6 +23,7 @@
     <!----------------------------- SCRIPTS ----------------------------->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -40,7 +41,11 @@
     </nav>
     <main>
         <h1>Directory</h1>
-        
+        <div class="menu">
+            <button id="grid-button">Grid</button>
+            <button id="list-button">List</button>
+        </div>
+        <div id="cards" class="cards grid"></div>
     </main>
     <footer>
         <div class="social">

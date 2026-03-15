@@ -83,6 +83,57 @@ header span {
 .navigation .current {
     background-color: var(--text-color);
 }
+/******************************* MAIN DIRECTORY *******************************/
+.menu {
+    text-align: center;
+}
+.menu button {
+    border: none;
+    border-radius: 3px;
+    background: none;
+    background-color: var(--primary-color);
+    color: var(--opposite-text-color);
+    font-size: 1.3rem;
+    width: 64px;
+    height: 34px;
+    cursor: pointer;
+}
+.menu button:hover {
+    background-color: var(--secondary-color);
+}
+/******************************* CARDS SECTION *******************************/
+.cards section{
+    border: solid var(--opposite-text-color) 1px;
+    box-shadow: 0 0 30px #777;
+    background-color: var(--opposite-text-color);
+    padding: 2.5rem 1rem;
+    margin: 1rem .5rem;
+    text-align: center;
+    font-size: .9rem;
+    color: var(--text-color);
+    font-family: var(--body);
+}
+.cards section img {
+    margin: 0 0 1rem 0;
+}
+.cards section p, section h2 {
+    margin: 0 0 .5rem 0;
+}
+section a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.list img {
+    display: none;
+}
 
 /******************************* FOOTER *******************************/
 footer {
