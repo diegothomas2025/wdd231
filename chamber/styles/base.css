@@ -24,6 +24,11 @@ body {
     font-family: var(--text-color);
     background-color: var(--background-color);
 }
+h1 {
+    font-family: var(--heading);
+    color: var(--text-color);
+    padding: 0 10px;
+}
 
 /******************************* HEADER *******************************/
 header {
@@ -102,34 +107,54 @@ header span {
     background-color: var(--secondary-color);
 }
 /******************************* CARDS SECTION *******************************/
-.cards section{
+.cards {
+    color: var(--text-color);
+    font-family: var(--body);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.grid section {
     border: solid var(--opposite-text-color) 1px;
     box-shadow: 0 0 30px #777;
     background-color: var(--opposite-text-color);
     padding: 2.5rem 1rem;
-    margin: 1rem .5rem;
+    margin: 1rem 10px;
     text-align: center;
     font-size: .9rem;
-    color: var(--text-color);
-    font-family: var(--body);
 }
-.cards section img {
+.grid section img {
     margin: 0 0 1rem 0;
 }
-.cards section p, section h2 {
+.grid section p, .grid section h2 {
     margin: 0 0 .5rem 0;
 }
 section a {
     text-decoration: none;
     color: var(--primary-color);
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
+/******************************* LIST SECTION *******************************/
 .list {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
+}
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0 10px;
+    padding: 2.5rem 10px;
+    background-color: var(--opposite-text-color);
+    text-align: start;
+    font-size: .8rem;
+}
+.list section p, .list section h2 {
+    padding: 0 .5rem 0 0;
+}
+.list section:nth-child(even) {
+	background-color: #e7eaed;
 }
 .list img {
     display: none;

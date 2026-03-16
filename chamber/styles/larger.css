@@ -17,10 +17,4 @@
     .navigation li {
         flex: 1 1 100%;
     }
-    /******************************* MAIN DIRECTORY *******************************/
-    .list section {
-        display: flex;
-        justify-content: space-around;
-    }
-    
 }
