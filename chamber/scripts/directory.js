@@ -47,16 +47,16 @@ const displayMemberData = (members) => {
 
         if (member.membership === 3) { // membership level
             card.classList.add('gold');
-            membership.textContent = `Gold level membership`
-            membership.classList.add('membership-gold')
+            membership.textContent = `Gold level membership`;
+            membership.classList.add('membership-gold');
         } else if (member.membership === 2) {
-            card.classList.add('silver')
-            membership.textContent = `Silver level membership`
-            membership.classList.add('membership-silver')
+            card.classList.add('silver');
+            membership.textContent = `Silver level membership`;
+            membership.classList.add('membership-silver');
         } else {
-            card.classList.add('member')
-            membership.textContent = `Member`
-            membership.classList.add('membership-member')
+            card.classList.add('member');
+            membership.textContent = `Member`;
+            membership.classList.add('membership-member');
         }
     })
 }
