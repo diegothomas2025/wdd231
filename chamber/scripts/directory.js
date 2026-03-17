@@ -42,6 +42,14 @@ const displayMemberData = (members) => {
         card.appendChild(phone);
         card.appendChild(website);
         cards.appendChild(card);
+
+        if (member.membership === 3) { // membership level
+            card.classList.add('gold');
+        } else if (member.membership === 2) {
+            card.classList.add('silver')
+        } else {
+            card.classList.add('member')
+        }
     })
 }
 

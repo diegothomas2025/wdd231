@@ -131,7 +131,7 @@ header span {
 }
 section a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 /******************************* LIST SECTION *******************************/
 .list {
@@ -152,11 +152,18 @@ section a {
 .list section p, .list section h2 {
     padding: 0 .5rem 0 0;
 }
-.list section:nth-child(even) {
+/* .list section:nth-child(even) {
 	background-color: #e7eaed;
-}
+} */
 .list img {
     display: none;
+}
+/******************************* MEMBERSHIP LEVEL *******************************/
+.cards .gold , .list .gold{
+    background-color: #eceba9;
+}
+.cards .silver {
+    background-color: #d3ddee;
 }
 
 /******************************* FOOTER *******************************/
