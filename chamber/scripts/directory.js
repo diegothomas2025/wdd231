@@ -47,7 +47,7 @@ const displayMemberData = (members) => {
 
         if (member.membership === 3) { // membership level
             card.classList.add('gold');
-            membership.innerHTML = `Gold level membership`
+            membership.textContent = `Gold level membership`
             membership.classList.add('membership-gold')
         } else if (member.membership === 2) {
             card.classList.add('silver')
