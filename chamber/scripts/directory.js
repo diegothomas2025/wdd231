@@ -22,6 +22,7 @@ const displayMemberData = (members) => {
         const address = document.createElement('p');
         const phone = document.createElement('p');
         const website = document.createElement('a');
+        const membership = document.createElement('p');
 
         name.textContent = `${member.name}`; // text content
         address.textContent = `${member.address}`;
@@ -41,14 +42,21 @@ const displayMemberData = (members) => {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        card.appendChild(membership);
         cards.appendChild(card);
 
         if (member.membership === 3) { // membership level
             card.classList.add('gold');
+            membership.innerHTML = `Gold level membership`
+            membership.classList.add('membership-gold')
         } else if (member.membership === 2) {
             card.classList.add('silver')
+            membership.textContent = `Silver level membership`
+            membership.classList.add('membership-silver')
         } else {
             card.classList.add('member')
+            membership.textContent = `Member`
+            membership.classList.add('membership-member')
         }
     })
 }
