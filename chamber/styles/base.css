@@ -213,3 +213,31 @@ footer {
 .social a:hover {
     background-color: var(--secondary-color);
 }
+
+/******************************* MAIN / index.html *******************************/
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-content {
+    padding: 3.5rem;
+    text-align: center;
+    background-color: var(--opposite-text-color);
+}
+.hero-content h2 {
+    font-size: 2rem;
+}
+.hero-content button {
+    margin-top: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--opposite-text-color);
+    padding: 1rem;
+    border: solid black 1px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hero-content button:hover {
+    background-color: var(--secondary-color);
+}
