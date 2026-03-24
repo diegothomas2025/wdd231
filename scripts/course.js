@@ -81,6 +81,7 @@ const courses = [
 // ALL COURSES
 const allButton = document.querySelector('#all-btn');
 const container = document.querySelector('#courses-card');
+const courseDetails = document.querySelector('#course-details');
 
 displayCourses(courses)
 
@@ -134,5 +135,22 @@ wddButton.addEventListener('click', () => {
     const wddCourses = courses.filter(course => course.subject === 'WDD'); // filter wdd subject
     displayCourses(wddCourses)
 });
+
+/*
+    Function to make the Modal element work.
+    1. 
+    2. 
+    3. 
+*/
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    
+    
+    
+    `
+}
 
 
