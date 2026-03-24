@@ -244,7 +244,36 @@ footer {
     color: var(--opposite-text-color);
     background-color: var(--secondary-color);
 }
-/******************************* MAIN EVENTS SECTION / index.html *******************************/
+/*******************************  EVENTS WEATHER SECTION / index.html *******************************/
 .events-weather-container {
-    padding: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.events-weather-container h2, .events-weather-container h3 {
+    margin: .5rem 0;
+    font-size: 2rem;
+}
+.events, .weather {
+    border: solid gray 1px;
+    border-radius:18px;
+    background-color: var(--opposite-text-color);
+    padding: 2.5rem 1rem;
+    margin: 1rem 10px;
+    text-align: center;
+    font-size: .9rem;
+}
+.events ul {
+    list-style-type: none;
+    font-size: 1rem;
+}
+.current-weather figcaption {
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+.current-weather p {
+    font-size: 2rem;
+}
+.forecast {
+    font-size: 1rem;
 }
