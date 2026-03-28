@@ -1,4 +1,4 @@
-[
+export const membership = [
     {
         "title": "Non Profit membership Level",
         "benefits": "These membership levels have increasing"
