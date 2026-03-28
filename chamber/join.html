@@ -44,18 +44,50 @@
         <h1>Join</h1>
         <h2>Membership Aplication Form</h2>
         <form action="" method="get">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="get-fname">First Name</label>
-                <input type="text" required name="first" id="get-fname" title="Your First Name" autocomplete="given-name">
+            <label for="get-fname">First Name</label>
+            <input type="text" required name="first" id="get-fname" title="Your First Name" autocomplete="given-name">
 
-                <label for="get-lname">Last Name</label>
-                <input type="text" required name="last" id="get-lname" title="Your Last Name" autocomplete="family-name">
-
-            </fieldset>
+            <label for="get-lname">Last Name</label>
+            <input type="text" required name="last" id="get-lname" title="Your Last Name" autocomplete="family-name">
             
-                <label for="get-organization-title">Organization Title</label>
-                <input type="text" name="organization" id="get-organization-title" title="Your Organization Title" autocomplete="organization-title" pattern="">
+            <label for="get-organization-title">Organization Title</label>
+            <input type="text" name="organization-title" id="get-organization-title" title="Your Organization Title" autocomplete="organization-title" pattern="">
+
+            <label for="get-email">Email</label>
+            <input type="email" required name="email" id="get-email" title="Your Email" autocomplete="email" placeholder="thomas4@gmail.com">
+
+            <label for="get-phone">Phone Number</label>
+            <input type="tel" required name="phone" title="Your Phone" id="get-phone" autocomplete="tel">
+            <!-- BUSINESS NAME -->
+            <label for="get-organization-name">Business Name</label>
+            <input type="text" required name="organization-name" title="Your Business/Organization's Name" id="get-organization-name" autocomplete="organization">
+            <!-- MEMBERSHIP LEVEL -->
+            <label for="get-membership">Membership Level</label>
+            <select name="membership-level" id="get-membership">
+                <option selected value="np">Non-Profit</option>
+                <option value="bronze">Bronze Memership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+            <!-- ORGANIZATION NAME -->
+            <label for="get-organization-description">Organization Name</label>
+            <textarea name="organization-description" id="get-organization-description" title="Your Business/Organization's Description"></textarea>
+            <!-- TIMESTAMP -->
+            <input type="hidden" id="timestamp" name="timestamp">
+            <!-- SUBMIT -->
+            <input type="submit" name="submit" id="submit" value="submit">
+            <!-- MEMBERSHIP SECTION -->
+            <section>
+                <h2>Membership Levels</h2>
+                
+
+            </section>
+
+
+
+
+            
+                
 
         </form>
     </main>
