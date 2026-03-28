@@ -1,18 +1,39 @@
 export const membership = [
     {
         "title": "Non Profit membership Level",
-        "benefits": "These membership levels have increasing"
+        "benefits": [
+            "Free membership for non-profit organization",
+            "Basic directory listing",
+            "Access to community events",
+            "Networking opportunities with local businesses"
+        ]
     },
     {
         "title": "Bronze Membership Level",
-        "benefits": "Bronze bla bla" 
+        "benefits": [
+            "Standard directory listing",
+            "Access to networking events",
+            "Monthly newsletter",
+            "Limited advertising opportunities"
+        ] 
     },
     {
         "title": "Silver Membership Level",
-        "benefits": "Silver bla bla" 
+        "benefits": [
+            "Standard directory listing",
+            "Access to networking events",
+            "Monthly newsletter",
+            "Limited advertising opportunities"
+        ] 
     },
     {
         "title": "Gold Membership Level",
-        "benefits": "Gold membership levels have increasing" 
+        "benefits": [
+
+            "Enhanced directory listing with logo",
+            "Priority access to events and workshops",
+            "Increased advertising opportunities",
+            "Social media promotion"
+        ]
     }
 ]

@@ -8,7 +8,10 @@ const membershipCards = document.querySelector('#membership-cards');
 const mydialog = document.querySelector('#mydialog');
 const mytitle = document.querySelector('#mydialog h2');
 const myclose = document.querySelector('#mydialog button');
-const myinfo = document.querySelector('#mydialog p');
+const myinfo = document.querySelector('#benefits-div');
+
+
+
 
 myclose.addEventListener('click', () => mydialog.close());
 
@@ -19,12 +22,14 @@ function displayCards (data) {
         
         const titleCard = document.createElement('h3');
         const infoBtn = document.createElement('button');
-
+        const divCard = document.createElement('div')
+        
         titleCard.textContent = element.title;
         infoBtn.textContent = 'Learn More'
 
-        membershipCards.appendChild(titleCard)
-        membershipCards.appendChild(infoBtn)
+        divCard.appendChild(titleCard)
+        divCard.appendChild(infoBtn)
+        membershipCards.appendChild(divCard);
 
         infoBtn.addEventListener('click', () => displayDialog(element));
     });
@@ -32,8 +37,19 @@ function displayCards (data) {
 
 displayCards(membership)
 
+const ul = document.createElement('ul');
 function displayDialog (x) {
-    mytitle.textContent = x.title
-    myinfo.textContent = x.benefits
+
+     mytitle.textContent = x.title
+     ul.innerHTML = ''
+
+    x.benefits.forEach(benefit => {
+        const li = document.createElement('li');
+        li.textContent = benefit
+        ul.appendChild(li)
+    })
+   
+    myinfo.appendChild(ul)
     mydialog.showModal()
 }
+

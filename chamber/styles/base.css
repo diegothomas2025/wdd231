@@ -280,3 +280,118 @@ footer {
 .forecast {
     font-size: 1rem;
 }
+/******************************* MAIN FORM SECTION / join.html *******************************/
+.form-title {
+    margin-bottom: 10px;
+    color: #042e6e;
+}
+form {
+    margin: 1rem 10px;
+
+    label {
+        display: block;
+        color: #042e6e;
+        padding-top: .2rem;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: solid #999 1px;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: #555;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 300px;
+    }
+    textarea {
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 50px;
+        max-height: 50px;
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: solid #999 1px;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #3D405B;
+        
+    }
+
+    input:required {
+        border-left-color: red;
+    }
+    input:focus {
+        border-left-color: black;
+        outline: none;
+    }
+    input:required:valid {
+        border-left-color: green;
+    }
+    input[type=submit] {
+        display: block;
+        border: none;
+        text-align: center;
+        background-color: var(--primary-color);
+        color: var(--opposite-text-color);
+        border-radius: 1rem;
+        padding: .6rem 1.5rem;
+        margin: 2rem 0;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: var(--secondary-color);
+    }
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--secondary-color);
+}
+
+/******************************* MEMBERSHIP SECTION / join.html *******************************/
+.membership-h2 {
+    margin: 15px 10px 0;
+    color: #042e6e;
+}
+#membership-cards div {
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #d3ddee;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+#membership-cards div button {
+    padding: 3.5px;
+    border-radius: 2px;
+    border: solid black 1px;
+}
+#membership-cards div h3 {
+    margin-bottom: 5px;
+}
+/******************************* DIALOG / join.html *******************************/
+#mydialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--opposite-text-color);
+    padding: 1rem;
+}
+#mydialog div {
+    display: grid;
+    grid-template-columns: 1fr 44px;
+    margin-bottom: 1rem;
+}
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}

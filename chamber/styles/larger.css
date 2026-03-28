@@ -20,4 +20,10 @@
     .list section {
         grid-template-columns: repeat(5, 1fr);
     }
+    /******************************* FORM join.html *******************************/
+    .join-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 10px;
+    }
 }
