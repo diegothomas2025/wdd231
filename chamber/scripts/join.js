@@ -21,7 +21,7 @@ function displayCards (data) {
         const infoBtn = document.createElement('button');
 
         titleCard.textContent = element.title;
-        infoBtn.textContent = 'learn more'
+        infoBtn.textContent = 'Learn More'
 
         membershipCards.appendChild(titleCard)
         membershipCards.appendChild(infoBtn)
