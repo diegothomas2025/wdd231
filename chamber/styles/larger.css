@@ -25,5 +25,8 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
         column-gap: 10px;
+    } 
+    #membership-cards div {
+        max-width: 100%;
     }
 }
