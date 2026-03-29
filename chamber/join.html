@@ -73,7 +73,7 @@
                     <option value="gold">Gold Membership</option>
                 </select>
                 <!-- ORGANIZATION NAME -->
-                <label for="get-organization-description">Organization Name</label>
+                <label for="get-organization-description">Organization Description</label>
                 <textarea name="organization-description" id="get-organization-description" title="Your Business/Organization's Description"></textarea>
                 <!-- TIMESTAMP -->
                 <input type="hidden" id="timestamp" name="timestamp">
@@ -83,12 +83,12 @@
             <!-- MEMBERSHIP SECTION -->
             <section>
                 <h2 class="membership-h2">Membership Levels</h2>
-                <div id="membership-cards"></div>
+                <div id="membership-cards" class="loader"></div>
 
                 <dialog id="mydialog">
                     <div>
                         <h2>Title</h2>
-                        <button>X</button>
+                        <button>❌</button>
                     </div>
                     <div id="benefits-div"></div>
                 </dialog>

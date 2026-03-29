@@ -20,6 +20,10 @@
     .list section {
         grid-template-columns: repeat(5, 1fr);
     }
+    
+}
+
+@media only screen and (min-width: 30rem) {
     /******************************* FORM join.html *******************************/
     .join-grid {
         display: grid;
@@ -29,4 +33,5 @@
     #membership-cards div {
         max-width: 100%;
     }
+
 }
