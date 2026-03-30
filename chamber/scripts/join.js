@@ -53,3 +53,5 @@ function displayDialog (x) {
     mydialog.showModal()
 }
 
+const timestampInput = document.querySelector('#timestamp');
+timestampInput.value = new Date().toLocaleString();

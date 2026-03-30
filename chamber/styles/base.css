@@ -427,3 +427,21 @@ input:-webkit-autofill {
         background-color: #d3ddee;
     }
 }
+
+/******************************* MAIN / tankyou.html *******************************/
+.thanks-title {
+    margin: 0 0 0 10px;
+    padding: 1rem 0;
+    color: var(--primary-color);
+}
+#results {
+    margin: 0 10px 0 10px;
+    background-color: #7fabec;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    color: black;
+}
+#results p {
+    padding: 1rem 0;
+}

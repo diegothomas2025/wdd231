@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover our Chamber of Commerce, take a look at the benefits it offers, and we invite you to become a member.">
+    <meta name="description" content="Join the chamber of commerce and participate in the benefits that will expand your business, your sales, and your community.">
     <meta name="author" content="Thomas Gomez">
-    <title>General Rodriguez - Chamber of Commerce Home Page</title>
+    <title>General Rodriguez - Join the Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico">
     <!----------------------------- FACEBOOK META TAGS ----------------------------->
-    <meta property="og:title" content="Home page of the General Rodriguez Chamber of Commerce">
-    <meta property="og:description" content="Discover our Chamber of Commerce, take a look at the benefits it offers, and we invite you to become a member.">
+    <meta property="og:title" content="Join the Chamber of Commerce of General Rodriguez">
+    <meta property="og:description" content="Join the chamber of commerce and participate in the benefits that will expand your business, your sales, and your community.">
     <meta property="og:image" content="https://diegothomas2025.github.io/wdd231/images/profile.webp">
     <meta property="og:url" content="https://diegothomas2025.github.io/wdd231/chamber/directory.html">
     <!----------------------------- FONTS ----------------------------->
@@ -53,7 +53,7 @@
                 <input type="text" required name="last" id="get-lname" title="Your Last Name" autocomplete="family-name">
                 
                 <label for="get-organization-title">Organization Title</label>
-                <input type="text" name="organization-title" id="get-organization-title" title="Your Organization Title" autocomplete="organization-title">
+                <input type="text" name="organization-title" id="get-organization-title" title="Your Organization Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
 
                 <label for="get-email">Email</label>
                 <input type="email" required name="email" id="get-email" title="Your Email" autocomplete="email" placeholder="thomas4@gmail.com">
@@ -61,7 +61,7 @@
                 <label for="get-phone">Phone Number</label>
                 <input type="tel" required name="phone" title="Your Phone" id="get-phone" autocomplete="tel">
                 <!-- BUSINESS NAME -->
-                <label for="get-organization-name">Business Name</label>
+                <label for="get-organization-name">Organization Name</label>
                 <input type="text" required name="organization-name" title="Your Business/Organization's Name" id="get-organization-name" autocomplete="organization">
                 <!-- MEMBERSHIP LEVEL -->
                 <label for="get-membership">Select Membership Level</label>
@@ -72,7 +72,7 @@
                     <option value="silver">Silver Membership</option>
                     <option value="gold">Gold Membership</option>
                 </select>
-                <!-- ORGANIZATION NAME -->
+                <!-- ORGANIZATION DESCRIPTION -->
                 <label for="get-organization-description">Organization Description</label>
                 <textarea name="organization-description" id="get-organization-description" title="Your Business/Organization's Description"></textarea>
                 <!-- TIMESTAMP -->
