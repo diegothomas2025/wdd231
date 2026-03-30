@@ -1,6 +1,5 @@
 import {membership} from '../data/membership.mjs'
 
-console.log(membership)
 
 // DOM
 const membershipCards = document.querySelector('#membership-cards');
@@ -17,7 +16,7 @@ myclose.addEventListener('click', () => mydialog.close());
 
 // LOOP THROUGH THE ARRAY OF JSON ITEMS
 function displayCards (data) {
-    console.log(data)
+
     data.forEach(element => {
         
         const titleCard = document.createElement('h3');
