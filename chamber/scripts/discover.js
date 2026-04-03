@@ -1,5 +1,4 @@
 import {places} from '../data/places.mjs'
-console.log(places)
 
 const discoverContainer = document.querySelector('#discover-cards');
 
@@ -34,20 +33,22 @@ displayCards(places);
 // LOCAL STORAGE
 const message = document.querySelector('#message');
 const now = Date.now()
-// window.localStorage.setItem('time', today)
-
-// const firstVisit = window.localStorage.getItem('time');
-// window.localStorage.setItem('first', firstVisit)
-
-// if (firstVisit < 1) {
-//     message.textContent = `this is your first time`;
-// } else {
-//     message.textContent = `no funciona`;
-// }
 const lastVisit = localStorage.getItem('lastVisit');
-console.log(lastVisit)
+const msToDays = 86400000;
 
 if (lastVisit === null) {
-    message.textContent = `Welcome to `
+    message.textContent = `Welcome! Let us know if you have any questions`;
+} else {
+    const timeDifference = now - lastVisit
+    const daysDifference = Math.floor(timeDifference / msToDays)
+    
+    if (daysDifference < 1) {
+        message.textContent = `Back so soon! Awesome!`;
+    } else if (daysDifference === 1) {
+        message.textContent = `Your last visited 1 day ago`;
+    } else {
+        message.textContent = `Your last visited ${daysDifference} days ago`
+    }
+    
 }
 localStorage.setItem("lastVisit", now);
