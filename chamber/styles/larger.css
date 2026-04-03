@@ -1,3 +1,16 @@
+@media only screen and (min-width: 30rem) {
+    /******************************* FORM join.html *******************************/
+    .join-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 10px;
+    } 
+    #membership-cards div {
+        max-width: 100%;
+    }
+
+}
+
 @media only screen and (min-width: 38rem) {
     /******************************* HEADER *******************************/
     header {
@@ -20,18 +33,24 @@
     .list section {
         grid-template-columns: repeat(5, 1fr);
     }
+    #discover-cards div {
+        grid-template-areas:
+        
+        "image name"
+        "image description"
+        "image address";
+    }
+    /* #discover-cards div img {
+        width: 300px;
+        height: 100%;
+    } */
+}
+
+@media only screen and (min-width: 64rem) {
+    #discover-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
 }
 
-@media only screen and (min-width: 30rem) {
-    /******************************* FORM join.html *******************************/
-    .join-grid {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 10px;
-    } 
-    #membership-cards div {
-        max-width: 100%;
-    }
-
-}

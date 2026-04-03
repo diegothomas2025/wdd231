@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover our Chamber of Commerce, take a look at the benefits it offers, and we invite you to become a member.">
+    <meta name="description" content="Discover businesses in our Chamber of Commerce directory and connect with local companies supporting our community.">
     <meta name="author" content="Thomas Gomez">
-    <title>General Rodriguez - Chamber of Commerce Home Page</title>
+    <title>General Rodriguez - Chamber of Commerce Directory</title>
     <link rel="icon" href="images/favicon.ico">
     <!----------------------------- FACEBOOK META TAGS ----------------------------->
-    <meta property="og:title" content="Home page of the General Rodriguez Chamber of Commerce">
-    <meta property="og:description" content="Discover our Chamber of Commerce, take a look at the benefits it offers, and we invite you to become a member.">
+    <meta property="og:title" content="Directory of the General Rodriguez Chamber of Commerce">
+    <meta property="og:description" content="Browse our Chamber of Commerce directory to discover local businesses, learn about their services, and connect with our community.">
     <meta property="og:image" content="https://diegothomas2025.github.io/wdd231/images/profile.webp">
     <meta property="og:url" content="https://diegothomas2025.github.io/wdd231/chamber/directory.html">
     <!----------------------------- FONTS ----------------------------->
@@ -19,12 +19,12 @@
     <!----------------------------- CSS ----------------------------->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!----------------------------- SCRIPTS ----------------------------->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -34,50 +34,15 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a class="current" href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <img src="images/general-rodriguez.webp" alt="General Rodriguez City">
-            <div class="hero-content">
-                <h1>Welcome to the General Rodriguez Chamber of Commerce</h1>
-                <a href="join.html">Join to the Chamber</a>
-            </div>
-        </section>
-        <section class="events-weather-container">
-            <!-- EVENTS SECTION -->
-            <section class="events">
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li>Business meeting: Friday 7:00 PM</li>
-                    <li>Local Fair: Sunday 10:00 AM</li>
-                </ul>
-            </section>
-            <!-- WEATHER SECTION -->
-            <section class="weather">
-                <h2>Current Weather</h2>
-                <div class="current-weather">
-                    <figure>
-                        <img id="weather-icon" src="#" alt="">
-                        <figcaption id="caption-desc"></figcaption>
-                    </figure>
-                    <p id="current-temp"></p>
-                </div>
-                <h3>Weather Forecast</h3>
-                <div class="forecast">
-                    <p id="day-1"></p>
-                    <p id="day-2"></p>
-                    <p id="day-3"></p>
-                </div>
-            </section>
-        </section>
-        <section id="spotlights" class="cards grid">
-        </section>
+        <h1>Discover</h1>
+        <section id="discover-cards"></section>
     </main>
     <footer>
         <div class="social">

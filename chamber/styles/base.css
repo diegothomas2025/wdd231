@@ -445,3 +445,35 @@ input:-webkit-autofill {
 #results p {
     padding: 1rem 0;
 }
+
+/******************************* MAIN / discover.html *******************************/
+#discover-cards div {
+    margin: 1rem 8px;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    background-color: #eee;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address";
+}
+#discover-cards div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+#discover-cards div img {
+    width: 100%;
+    grid-area: image;
+}
+#discover-cards div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+#discover-cards div address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
