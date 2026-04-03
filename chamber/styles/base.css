@@ -467,6 +467,7 @@ input:-webkit-autofill {
     grid-area: name;
 }
 #discover-cards div img {
+    display: block;
     width: 100%;
     grid-area: image;
 }
@@ -479,9 +480,18 @@ input:-webkit-autofill {
     grid-area: address;
 }
 #discover-cards div button {
-    margin: 1rem 10px;
+    margin: 1rem auto;
     cursor: pointer;
     grid-area: button;
+    width: 200px;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    color: var(--opposite-text-color);
+    border: none;
+    border-radius: 22px;
+}
+#discover-cards div button:hover {
+    background-color: var(--secondary-color);
 }
 #message {
     background-color: var(--primary-color);

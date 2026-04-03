@@ -34,17 +34,15 @@
         grid-template-columns: repeat(5, 1fr);
     }
     #discover-cards div {
-        align-items: start;
-        grid-auto-rows: min-content;
         grid-template-areas:
-        "image name"
+        "name name"
         "image description"
-        "image address"
-        "image button";
+        "address address"
+        "button button";
     }
     #discover-cards div img {
-        height: 100%;
-        object-fit: cover;
+        margin-left: 10px;
+        width: 300px;
     }
     #discover-cards div img:hover {
         box-shadow: 0 0 50px #333;
@@ -56,6 +54,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+    #discover-cards div {
+        grid-template-areas:
+        "name name"
+        "image description"
+        "address address"
+        "button button";
+    }
 }
 
