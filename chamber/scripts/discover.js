@@ -11,19 +11,23 @@ const discoverContainer = document.querySelector('#discover-cards');
         const image = document.createElement('img');
         const address = document.createElement('address');
         const description = document.createElement('p');
+        const informationBtn = document.createElement('button');
 
         title.textContent = element.name; // TEXT CONTENT
         address.textContent = element.address;
         description.textContent = element.description;
+        informationBtn.textContent = `Learn More`;
 
         image.setAttribute('src', element.image); // ATTRIBUTES
         image.setAttribute('alt', element.description);
+        image.setAttribute('loading', 'lazy')
 
         cards.appendChild(title); // APPENDS
         figure.appendChild(image);
         cards.appendChild(figure);
         cards.appendChild(address);
         cards.appendChild(description);
+        cards.appendChild(informationBtn);
         discoverContainer.appendChild(cards);
     });
  }

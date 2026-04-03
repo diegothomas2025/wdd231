@@ -34,14 +34,17 @@
         grid-template-columns: repeat(5, 1fr);
     }
     #discover-cards div {
+        align-items: start;
+        grid-auto-rows: min-content;
         grid-template-areas:
         "image name"
         "image description"
-        "image address";
+        "image address"
+        "image button";
     }
     #discover-cards div img {
-        width: 300px;
         height: 100%;
+        object-fit: cover;
     }
     #discover-cards div img:hover {
         box-shadow: 0 0 50px #333;
