@@ -32,3 +32,22 @@ const discoverContainer = document.querySelector('#discover-cards');
 displayCards(places);
 
 // LOCAL STORAGE
+const message = document.querySelector('#message');
+const now = Date.now()
+// window.localStorage.setItem('time', today)
+
+// const firstVisit = window.localStorage.getItem('time');
+// window.localStorage.setItem('first', firstVisit)
+
+// if (firstVisit < 1) {
+//     message.textContent = `this is your first time`;
+// } else {
+//     message.textContent = `no funciona`;
+// }
+const lastVisit = localStorage.getItem('lastVisit');
+console.log(lastVisit)
+
+if (lastVisit === null) {
+    message.textContent = `Welcome to `
+}
+localStorage.setItem("lastVisit", now);
