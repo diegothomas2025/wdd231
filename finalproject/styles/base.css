@@ -16,24 +16,98 @@
     --body-font: "Roboto";
 }
 
+/******************************* GENERAL STYLE *******************************/
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+
 /******************************* HEADER *******************************/
 header {
     display: grid;
-    grid-template-columns: 100px auto 44px;
-    padding: 5px 0 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 88px 44px;
+    padding: 1rem 0 1rem 10px;
     column-gap: 8px;
-    align-items: end;
-    border-bottom: solid 1px #ddd;
     background-color: var(--dark-color-background);
-}
-.hamburger:before {
-    content: "\2630";
-}
-.hamburger .show:before {
-    content: "\00D7";
 }
 header img {
     display: block;
     width: 100%;
     height: auto;
 }
+/******************************* HAMBURGER BUTTON *******************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--light-color-background);
+    cursor: pointer;
+}
+.hamburger:before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+.hamburger.show:before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+/******************************* NAVIGATION BUTTON *******************************/
+.navigation {
+    display: none;
+    background-color: var(--light-color-background);
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style: none;
+}
+.navigation a {
+    display: block;
+    padding: .9rem 10px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color-background);
+}
+.navigation .current {
+    border-bottom: 2px solid var(--primary-color);;
+}
+
+/******************************* FOOTER *******************************/
+footer {
+    background-color: var(--dark-color-background);
+    padding: 1rem;
+    text-align: center;
+    color: var(--light-color-background);
+}
+.social {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--light-color-background);
+    border-radius: 22px;
+}
+.social img {
+    width: 22px;
+    height: 22px;
+}
+.social a:hover {
+    background-color: var(--primary-color);
+}
+
+
