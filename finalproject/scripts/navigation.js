@@ -1,7 +1,11 @@
-const hamButton = document.querySelector('#ham-button');
-const navButton = document.querySelector('#nav-button');
+export function showNavigation() {
 
-hamButton.addEventListener('click', () => {
-    hamButton.classList.toggle('show');
-    navButton.classList.toggle('show');
-});
+    const hamButton = document.querySelector('#ham-button');
+    const navButton = document.querySelector('#nav-button');
+
+    hamButton.addEventListener('click', () => {
+        
+        hamButton.classList.toggle('show');
+        navButton.classList.toggle('show');
+    });
+};

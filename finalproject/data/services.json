@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Lavado exterior",
+    "price": "$3000",
+    "duration": "1 hora",
+    "description": "Limpieza completa de la carrocería.",
+    "image": "images/lavado-exterior.webp",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Acondicionamiento de plásticos exteriores",
+    "price": "$2500",
+    "duration": "30 min",
+    "description": "Restauración y protección de plásticos exteriores.",
+    "image": "images/plasticos-exterior.webp",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Aspirado y cepillado interior",
+    "price": "$2000",
+    "duration": "40 min",
+    "description": "Limpieza profunda de interior y baúl.",
+    "image": "images/aspirado.webp",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Limpieza de tapizados",
+    "price": "$8000",
+    "duration": "3 horas",
+    "description": "Limpieza profunda de asientos y alfombras.",
+    "image": "images/tapizados.webp",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Limpieza de vidrios interiores",
+    "price": "$1500",
+    "duration": "20 min",
+    "description": "Limpieza completa de vidrios interiores.",
+    "image": "images/vidrios.webp",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Pulido de ópticas",
+    "price": "$6000",
+    "duration": "1 hora",
+    "description": "Eliminación de opacidad y protección UV.",
+    "image": "images/opticas.webp",
+    "featured": false
+  }
+]

@@ -21,6 +21,12 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
 }
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    padding: 0 0 0 10px;
+}
 
 
 /******************************* HEADER *******************************/
@@ -86,6 +92,12 @@ header img {
     display: block;
     width: 100%;
     height: auto;
+}
+.hero {
+    position: relative;
+}
+.hero h1 {
+    position: absolute;
 }
 
 /******************************* FOOTER *******************************/

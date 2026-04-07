@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "car": "Ford Fiesta",
+    "service": "Lavado completo",
+    "price": "$5000",
+    "duration": "2 horas",
+    "location": "General Rodríguez",
+    "image": "images/jobs/fiesta.webp"
+  },
+  {
+    "id": 2,
+    "car": "Volkswagen Gol",
+    "service": "Limpieza de tapizados",
+    "price": "$8000",
+    "duration": "3 horas",
+    "location": "Moreno",
+    "image": "images/jobs/gol.webp"
+  },
+  {
+    "id": 3,
+    "car": "Peugeot 208",
+    "service": "Lavado exterior",
+    "price": "$3000",
+    "duration": "1 hora",
+    "location": "Luján",
+    "image": "images/jobs/208.webp"
+  },
+  {
+    "id": 4,
+    "car": "Toyota Corolla",
+    "service": "Pulido de ópticas",
+    "price": "$6000",
+    "duration": "1 hora",
+    "location": "General Rodríguez",
+    "image": "images/jobs/corolla.webp"
+  },
+  {
+    "id": 5,
+    "car": "Renault Clio",
+    "service": "Limpieza interior completa",
+    "price": "$4500",
+    "duration": "2 horas",
+    "location": "Paso del Rey",
+    "image": "images/jobs/clio.webp"
+  },
+  {
+    "id": 6,
+    "car": "Chevrolet Onix",
+    "service": "Lavado + encerado",
+    "price": "$6500",
+    "duration": "2.5 horas",
+    "location": "Moreno",
+    "image": "images/jobs/onix.webp"
+  }
+]
