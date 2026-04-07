@@ -77,7 +77,15 @@ header img {
     color: var(--light-color-background);
 }
 .navigation .current {
-    border-bottom: 2px solid var(--primary-color);;
+    background-color: var(--primary-color);
+    color: var(--light-color-background);
+}
+
+/******************************* HERO SECTION *******************************/
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /******************************* FOOTER *******************************/

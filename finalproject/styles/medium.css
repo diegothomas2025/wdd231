@@ -17,5 +17,10 @@
     .navigation a {
         border: none;
     }
+    .navigation .current {
+        border-bottom: 2px solid var(--primary-color);
+        background-color: var(--light-color-background);
+        color: var(--text-color);
+    }
     
 }
