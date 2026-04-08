@@ -1,79 +1,61 @@
 import { showNavigation } from './navigation.js';
 showNavigation()
+
 import { packages } from '../data/packages.mjs';
-console.log(packages)
-
-function displayPackages(packages) {
-
-    const packagesContainer = document.querySelector('#packages-container');
-
-    packages.forEach(element => {
-
-        const divContainer = document.createElement('div'); // CREATE ELEMENTS 
-        const nameSpan = document.createElement('span');
-        const nameh2 = document.createElement('h2')
-        const price = document.createElement('strong');
-        const priceP = document.createElement('p');
-        const servicesContainer = document.createElement('ul');
-        const reserveButton = document.createElement('button');
-
-        // NAME
-        nameSpan.textContent = element.name // BUILD CARDS
-        nameh2.textContent = `Fratt `;
-        // PRICE
-        price.textContent = element.price;
-        priceP.textContent = `Desde `;
-        // BUTTON
-        reserveButton.textContent = `Reserva Ahora`;
-
-        // SERVICES ARRAY
-        element.services.forEach(service => { 
-            const serviceLi = document.createElement('li');
-            serviceLi.textContent = service;
-            servicesContainer.appendChild(serviceLi)
-        });
-
-        // NAME
-        nameh2.appendChild(nameSpan) // APPEND CHILD ELEMENTS
-        divContainer.appendChild(nameh2);
-        //PRICE
-        priceP.appendChild(price)
-        divContainer.appendChild(priceP);
-        // SERVICES
-        divContainer.appendChild(servicesContainer);
-        // BUTTON
-        divContainer.appendChild(reserveButton);
-        // CONTAINER
-        packagesContainer.appendChild(divContainer);
-
-        reserveButton.addEventListener('click', () => displayDialog(element));
-    });
-};
+import { displayPackages } from './packages.js';
 displayPackages(packages)
 
-function displayDialog(element) {
-    // DIALOG ELEMENTS
-    const dialogContainer = document.querySelector('#dialog-container');
-    const dialogTitle = document.querySelector('#dialog-container h2');
-    const closeBtn = document.querySelector('#dialog-container button');
-    // const dialogContent = document.querySelector('#dialog-content');
-    const prices = document.querySelector('#dialog-prices');
-    const serviceList = document.querySelector('#dialog-services')
-    const message = `Hola, quiero reservar el paquete Fratt ${element.name} `;
-    const whatsappBtn = document.querySelector('#whatsapp-button');
-    
-    // BUILD CARD
-    dialogTitle.textContent = `Fratt ${element.name}`;
-    prices.textContent = `Desde ${element.price}`;
-    serviceList.textContent = "";
-    element.services.forEach(service => {
-        
-        const li = document.createElement('li');
-        li.textContent = service;   
-        serviceList.appendChild(li);
-    });
-    whatsappBtn.setAttribute('href', `https://wa.me/5491137663738?text=${encodeURIComponent(message)}`)
+import { getTestimonialData } from './testimonials.js';
+getTestimonialData()
 
-    closeBtn.addEventListener('click', () => dialogContainer.close());
-    dialogContainer.showModal();
+const url = "https://diegothomas2025.github.io/wdd231/finalproject/data/services.json"
+const servicesContainer = document.querySelector('#services-container');
+
+async function getServiceData() {
+    try {
+        const response = await fetch(url)
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data)
+            displayServices(data)
+        } else {
+            throw Error (await response.text())
+        }
+    } catch (error) {
+        console.log(error)
+    }
+};
+getServiceData()
+
+function displayServices(data) {
+
+    if (!servicesContainer) return;
+
+    data.forEach(element => {
+
+        // CREATE ELEMENTS
+        const cardContainer = document.createElement('div');
+        const serviceTitle = document.createElement('h2');
+        const price = document.createElement('p');
+        const duration = document.createElement('p');
+        const description = document.createElement('p');
+        const reserveButton = document.createElement('button');
+
+        // BUILD CARD
+        serviceTitle.textContent = element.name;
+        price.textContent = `Price: ${element.price}`;
+        duration.textContent = `Duration: ${element.duration}`;
+        description.textContent = `Description: ${element.description}`;
+        reserveButton.textContent = "Reservar Ahora";
+
+        // APPEND CHILD ELEMENTS AND CARD STRUCTURE
+        cardContainer.appendChild(serviceTitle);
+        cardContainer.appendChild(price);
+        cardContainer.appendChild(duration);
+        cardContainer.appendChild(description);
+        cardContainer.appendChild(reserveButton);
+
+        servicesContainer.appendChild(cardContainer);
+    });
+
 }
