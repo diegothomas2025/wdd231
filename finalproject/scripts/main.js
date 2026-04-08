@@ -56,16 +56,24 @@ function displayDialog(element) {
     const dialogContainer = document.querySelector('#dialog-container');
     const dialogTitle = document.querySelector('#dialog-container h2');
     const closeBtn = document.querySelector('#dialog-container button');
-    const dialogContent = document.querySelector('#dialog-content');
-    closeBtn.addEventListener('click', () => dialogContainer.close());
-    // CREATE ELEMENT
+    // const dialogContent = document.querySelector('#dialog-content');
+    const prices = document.querySelector('#dialog-prices');
+    const serviceList = document.querySelector('#dialog-services')
+    const message = `Hola, quiero reservar el paquete Fratt ${element.name} `;
+    const whatsappBtn = document.querySelector('#whatsapp-button');
     
+    // BUILD CARD
+    dialogTitle.textContent = `Fratt ${element.name}`;
+    prices.textContent = `Desde ${element.price}`;
+    serviceList.textContent = "";
+    element.services.forEach(service => {
+        
+        const li = document.createElement('li');
+        li.textContent = service;   
+        serviceList.appendChild(li);
+    });
+    whatsappBtn.setAttribute('href', `https://wa.me/5491137663738?text=${encodeURIComponent(message)}`)
 
-    dialogTitle.textContent = element.name;
-
-
-
+    closeBtn.addEventListener('click', () => dialogContainer.close());
     dialogContainer.showModal();
-
-
 }
