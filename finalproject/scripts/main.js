@@ -1,61 +1,66 @@
 import { showNavigation } from './navigation.js';
 showNavigation()
 
+// DISPLAY PACKAGE CARDS
 import { packages } from '../data/packages.mjs';
 import { displayPackages } from './packages.js';
 displayPackages(packages)
 
+// DISPLAY TESTIMONIAL CARDS
 import { getTestimonialData } from './testimonials.js';
 getTestimonialData()
 
-const url = "https://diegothomas2025.github.io/wdd231/finalproject/data/services.json"
-const servicesContainer = document.querySelector('#services-container');
+// DISPLAY SERVICE CARDS
+import { getServiceData } from './services.js';
+getServiceData()
 
-async function getServiceData() {
+const url = "https://diegothomas2025.github.io/wdd231/finalproject/data/jobs.json";
+const jobsContainer = document.querySelector('#jobs-container');
+
+async function getJobsData() {
     try {
-        const response = await fetch(url)
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             console.log(data)
-            displayServices(data)
+            displayJobs(data);
         } else {
             throw Error (await response.text())
-        }
+        } 
     } catch (error) {
         console.log(error)
-    }
+    }   
 };
-getServiceData()
+getJobsData()
 
-function displayServices(data) {
-
-    if (!servicesContainer) return;
+function displayJobs(data) {
 
     data.forEach(element => {
 
         // CREATE ELEMENTS
-        const cardContainer = document.createElement('div');
-        const serviceTitle = document.createElement('h2');
-        const price = document.createElement('p');
+        const div = document.createElement('div');
+        const title = document.createElement('h3');
+        const image = document.createElement('img');
+        const car = document.createElement('p');
         const duration = document.createElement('p');
-        const description = document.createElement('p');
-        const reserveButton = document.createElement('button');
-
-        // BUILD CARD
-        serviceTitle.textContent = element.name;
-        price.textContent = `Price: ${element.price}`;
+        const location = document.createElement('p');
+        
+        // BUILD CARDS
+        title.textContent = element.service;
+        car.textContent = `Car: ${element.car}`;
         duration.textContent = `Duration: ${element.duration}`;
-        description.textContent = `Description: ${element.description}`;
-        reserveButton.textContent = "Reservar Ahora";
+        location.textContent = `Location: ${element.location}`;
 
-        // APPEND CHILD ELEMENTS AND CARD STRUCTURE
-        cardContainer.appendChild(serviceTitle);
-        cardContainer.appendChild(price);
-        cardContainer.appendChild(duration);
-        cardContainer.appendChild(description);
-        cardContainer.appendChild(reserveButton);
+        // SET ATTRIBUTES
+        image.setAttribute('src', element.image);
+        image.setAttribute('alt', `${element.car} photo`);
 
-        servicesContainer.appendChild(cardContainer);
+        //APPEND CHILD ELEMENTS AND BUILD CARD STRUCTURES
+        div.appendChild(title);
+        div.appendChild(image);
+        div.appendChild(car);
+        div.appendChild(duration);
+        div.appendChild(location);
+        jobsContainer.appendChild(div);
     });
-
 }

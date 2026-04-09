@@ -6,7 +6,7 @@
     "price": "$5000",
     "duration": "2 horas",
     "location": "General Rodríguez",
-    "image": "images/jobs/fiesta.webp"
+    "image": "images/fiesta.webp"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "price": "$8000",
     "duration": "3 horas",
     "location": "Moreno",
-    "image": "images/jobs/gol.webp"
+    "image": "images/gol.webp"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "price": "$3000",
     "duration": "1 hora",
     "location": "Luján",
-    "image": "images/jobs/208.webp"
+    "image": "images/208.webp"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "price": "$6000",
     "duration": "1 hora",
     "location": "General Rodríguez",
-    "image": "images/jobs/corolla.webp"
+    "image": "images/corolla.webp"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "price": "$4500",
     "duration": "2 horas",
     "location": "Paso del Rey",
-    "image": "images/jobs/clio.webp"
+    "image": "images/clio.webp"
   },
   {
     "id": 6,
@@ -51,6 +51,6 @@
     "price": "$6500",
     "duration": "2.5 horas",
     "location": "Moreno",
-    "image": "images/jobs/onix.webp"
+    "image": "images/onix.webp"
   }
 ]
