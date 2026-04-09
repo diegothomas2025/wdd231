@@ -1,5 +1,6 @@
 const url = "https://diegothomas2025.github.io/wdd231/finalproject/data/services.json"
 const servicesContainer = document.querySelector('#services-container');
+const lastServiceSelected = document.querySelector('#lastServiceSelected');
 
 export async function getServiceData() {
     try {
@@ -43,5 +44,16 @@ function displayServices(data) {
         cardContainer.appendChild(description);
         cardContainer.appendChild(reserveButton);
         servicesContainer.appendChild(cardContainer);
+
+        // LOCAL STORAGE
+        reserveButton.addEventListener('click', () => {
+            localStorage.setItem('lastService', element.name)
+            lastServiceSelected.textContent = `Your last service selected was ${localStorage.getItem('lastService')}`
+        });
     });
+
+    const savedService = localStorage.getItem('lastService')
+    if (savedService) {
+        lastServiceSelected.textContent = `Your last service selected was ${savedService}`;
+    }
 };
