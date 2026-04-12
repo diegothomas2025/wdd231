@@ -22,5 +22,17 @@
         background-color: var(--light-color-background);
         color: var(--text-color);
     }
+    #packages-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+        align-items: stretch;
+        row-gap: 10px;
+    }   
+    #testimonials-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+       
+        
+    }
     
 }

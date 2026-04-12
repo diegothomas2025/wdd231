@@ -1,0 +1,10 @@
+@media only screen and (min-width: 63.7rem) { 
+
+   #packages-container {
+        transform: translateY(-50%);
+        
+    }   
+    .hero {
+        margin-bottom: -15rem;
+    }
+}

@@ -39,6 +39,7 @@ function displayJobs(data) {
         // SET ATTRIBUTES
         image.setAttribute('src', element.image);
         image.setAttribute('alt', `${element.car} photo`);
+        image.setAttribute('lazy', 'loading')
 
         //APPEND CHILD ELEMENTS AND BUILD CARD STRUCTURES
         div.appendChild(title);

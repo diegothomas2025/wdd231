@@ -36,8 +36,7 @@ function displayServices(data) {
         duration.textContent = `Duration: ${element.duration}`;
         description.textContent = `Description: ${element.description}`;
         reserveButton.textContent = "Reservar Ahora";
-
-        // APPEND CHILD ELEMENTS AND CARD STRUCTURE
+        
         cardContainer.appendChild(serviceTitle);
         cardContainer.appendChild(price);
         cardContainer.appendChild(duration);
@@ -45,7 +44,6 @@ function displayServices(data) {
         cardContainer.appendChild(reserveButton);
         servicesContainer.appendChild(cardContainer);
 
-        // LOCAL STORAGE
         reserveButton.addEventListener('click', () => {
             localStorage.setItem('lastService', element.name)
             lastServiceSelected.textContent = `Your last service selected was ${localStorage.getItem('lastService')}`

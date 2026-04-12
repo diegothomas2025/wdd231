@@ -5,8 +5,11 @@ export function displayPackages(packages) {
     packages.forEach(element => {
 
         const divContainer = document.createElement('div'); // CREATE ELEMENTS 
+        divContainer.classList.add('package-card');
+        const cardContent = document.createElement('div');
+        cardContent.classList.add('card-content');
         const nameSpan = document.createElement('span');
-        const nameh2 = document.createElement('h2')
+        const nameh2 = document.createElement('h3')
         const price = document.createElement('strong');
         const priceP = document.createElement('p');
         const servicesContainer = document.createElement('ul');
@@ -30,13 +33,14 @@ export function displayPackages(packages) {
 
         // NAME
         nameh2.appendChild(nameSpan) // APPEND CHILD ELEMENTS
-        divContainer.appendChild(nameh2);
+        cardContent.appendChild(nameh2);
         //PRICE
         priceP.appendChild(price)
-        divContainer.appendChild(priceP);
+        cardContent.appendChild(priceP);
         // SERVICES
-        divContainer.appendChild(servicesContainer);
+        cardContent.appendChild(servicesContainer);
         // BUTTON
+        divContainer.appendChild(cardContent)
         divContainer.appendChild(reserveButton);
         // CONTAINER
         packagesContainer.appendChild(divContainer);

@@ -21,10 +21,12 @@ body {
     font-family: var(--body-font);
     color: var(--text-color);
 }
-h1 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     letter-spacing: 1px;
+}
+h1 {
     padding: 0 0 0 10px;
 }
 
@@ -93,12 +95,101 @@ header img {
     width: 100%;
     height: auto;
 }
-.hero {
-    position: relative;
+
+/******************************* PACKAGE CARD *******************************/
+#packages-container {
+    margin: 1rem 0;
 }
-.hero h1 {
-    position: absolute;
+.package-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 10px 20px;
+    padding: 1rem;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--light-color-background);
+    box-shadow: 0 0 15px gray;
+    border-radius: 32px;
 }
+.card-content {
+    flex-grow: 1;
+}
+.package-card h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+}
+.package-card span {
+    color: var(--dark-color-background);
+}
+.package-card p {
+    padding: 1rem 0;
+    color: var(--primary-color);
+}
+.package-card strong {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.package-card ul {
+    list-style-type: none;
+    margin: 1rem auto;
+}
+.package-card li {
+    margin: 0 auto;
+    padding: 1rem 0;
+    max-width: 250px;
+}
+.package-card li:not(:last-child) {
+    border-bottom: 1px solid var(--primary-color);
+}
+.package-card button {
+    margin: auto auto;
+    padding: .5rem;
+    width: 200px;
+    font-size: 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 22px;
+    box-shadow: 0 0 20px var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--light-color-background);
+    cursor: pointer;
+}
+.package-card button:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color-background);
+    box-shadow: none;
+}
+/******************************* TESTIMONIALS SECTION *******************************/
+.testimonials {
+    margin: 2rem 0;
+}
+.testimonials h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 0 0 10px;
+}
+.testimonial-card {
+    margin: 10px 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: 0 0 15px gray;
+}
+.testimonial-card p {
+    padding: 5px 0;
+}
+.testimonial-card h3 {
+    padding: 5px 0;
+    color: black;
+    font-size: 1rem;
+}
+
+
 
 /******************************* FOOTER *******************************/
 footer {

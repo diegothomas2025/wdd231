@@ -34,13 +34,13 @@ function displayTestimonials(data) {
         //BUILD CARD
         fullname.textContent = `${element.name} ${element.lastname}`
         comment.textContent = element.comment;
-        location.textContent = element.location;
+        location.textContent = `Ubicacion: ${element.location}`;
         rating.textContent = "⭐".repeat(element.rating)
 
-        cardContainer.appendChild(fullname)
-        cardContainer.appendChild(comment)
-        cardContainer.appendChild(location)
-        cardContainer.appendChild(rating)
-        testimonialsContainer.appendChild(cardContainer)
+        cardContainer.appendChild(rating);
+        cardContainer.appendChild(comment);
+        cardContainer.appendChild(fullname);
+        cardContainer.appendChild(location);
+        testimonialsContainer.appendChild(cardContainer);
     });
 };
