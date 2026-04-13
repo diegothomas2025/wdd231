@@ -7,4 +7,7 @@
     .hero {
         margin-bottom: -15rem;
     }
+    .package-card {
+        box-shadow: none; 
+    }
 }

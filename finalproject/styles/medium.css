@@ -31,8 +31,12 @@
     #testimonials-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-       
-        
+    }
+    /******************************* SERVICES SECTION / service.html *******************************/
+    .service-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+        gap: 10px;
     }
     
 }
