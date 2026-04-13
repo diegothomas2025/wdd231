@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Lavado exterior completo",
+    "name": "Lavado exterior y pulido",
     "price": "$3000",
     "duration": "1 hora",
     "description": "Limpieza completa de la carrocería.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Aspirado y cepillado interior",
+    "name": "Aspirado y cepillado interior completo",
     "price": "$2000",
     "duration": "40 min",
     "description": "Limpieza profunda de interior y baúl.",
