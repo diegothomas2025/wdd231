@@ -39,6 +39,7 @@ function displayServices(data) {
         duration.textContent = `Duration: ${element.duration}`;
         description.textContent = `Description: ${element.description}`;
         reserveButton.textContent = "Reservar Ahora";
+        reserveButton.setAttribute('href', 'https://wa.me/5491137663738')
         
         cardContainer.appendChild(serviceTitle);
         cardContainer.appendChild(price);

@@ -242,13 +242,13 @@ header img {
 
 /******************************* SERVICES SECTION / service.html *******************************/
 .service-content {
-    margin: 10px;
+    margin: 10px 0;
 }
 .service-content div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    margin: 10px;
     padding: 1rem;
     max-width: 100%;
     height: 100%;
