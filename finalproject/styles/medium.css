@@ -55,5 +55,12 @@
     #jobs-grid div p {
         margin: 0 10px;
     }
-
+    /******************************* FORM *******************************/
+    form {
+        margin: 2rem auto;
+        width: 364px;
+        border-radius: 22px;
+        box-shadow: 0 0 15px gray;
+        padding: 2rem;
+    }
 }
