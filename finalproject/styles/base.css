@@ -67,7 +67,8 @@ header img {
 /******************************* NAVIGATION BUTTON *******************************/
 .navigation {
     display: none;
-    background-color: var(--light-color-background);
+    background-color: var(--dark-color-background);
+    color: var(--light-color-background);
 }
 .navigation.show {
     display: block;
@@ -296,7 +297,7 @@ header img {
 }
 #jobs-grid div {
     margin: 1rem 10px;
-    border: 1px solid gray;
+    box-shadow: 0 0 15px gray;
     border-radius: 8px;
     overflow: hidden;
 
@@ -330,6 +331,10 @@ header img {
 .location {
     grid-area: location;
 }
+
+/******************************* FORM / contact.html *******************************/
+
+
 /******************************* FOOTER *******************************/
 footer {
     background-color: var(--dark-color-background);
