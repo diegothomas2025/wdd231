@@ -10,4 +10,16 @@
     .package-card {
         box-shadow: none; 
     }
+    /******************************* JOBS SECTION / service.html *******************************/
+    #jobs-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #jobs-grid div {
+        grid-template-areas:
+        "image title"
+        "image car"
+        "image duration"
+        "image location";
+    }
 }

@@ -31,7 +31,7 @@ function displayServices(data) {
         const price = document.createElement('p');
         const duration = document.createElement('p');
         const description = document.createElement('p');
-        const reserveButton = document.createElement('button');
+        const reserveButton = document.createElement('a');
 
         // BUILD CARD
         serviceTitle.textContent = element.name;
@@ -40,6 +40,7 @@ function displayServices(data) {
         description.textContent = `Description: ${element.description}`;
         reserveButton.textContent = "Reservar Ahora";
         reserveButton.setAttribute('href', 'https://wa.me/5491137663738')
+        reserveButton.setAttribute('target', '_blank')
         
         cardContainer.appendChild(serviceTitle);
         cardContainer.appendChild(price);
@@ -51,7 +52,7 @@ function displayServices(data) {
 
         reserveButton.addEventListener('click', () => {
             localStorage.setItem('lastService', element.name)
-            lastServiceSelected.textContent = `Your last service selected was ${localStorage.getItem('lastService')}`
+            lastServiceSelected.textContent = `Last service selected: ${localStorage.getItem('lastService')}`
         });
     });
 

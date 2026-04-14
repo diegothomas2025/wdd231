@@ -1,5 +1,6 @@
 const url = "https://diegothomas2025.github.io/wdd231/finalproject/data/jobs.json";
 const jobsContainer = document.querySelector('#jobs-container');
+const jobsGrid = document.querySelector('#jobs-grid');
 
 export async function getJobsData() {
     try {
@@ -27,8 +28,11 @@ function displayJobs(data) {
         const title = document.createElement('h3');
         const image = document.createElement('img');
         const car = document.createElement('p');
+        car.classList.add('car');
         const duration = document.createElement('p');
+        duration.classList.add('duration');
         const location = document.createElement('p');
+        location.classList.add('location');
         
         // BUILD CARDS
         title.textContent = element.service;
@@ -47,6 +51,7 @@ function displayJobs(data) {
         div.appendChild(car);
         div.appendChild(duration);
         div.appendChild(location);
-        jobsContainer.appendChild(div);
+        jobsGrid.appendChild(div)
+        jobsContainer.appendChild(jobsGrid);
     });
 };
