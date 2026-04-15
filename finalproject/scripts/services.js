@@ -27,7 +27,7 @@ function displayServices(data) {
         // CREATE ELEMENTS
         const cardContainer = document.createElement('div');
         
-        const serviceTitle = document.createElement('h3');
+        const serviceTitle = document.createElement('h2');
         const price = document.createElement('p');
         const duration = document.createElement('p');
         const description = document.createElement('p');

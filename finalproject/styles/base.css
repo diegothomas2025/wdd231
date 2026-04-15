@@ -266,7 +266,7 @@ header img {
     box-shadow: 0 0 15px gray;
     border-radius: 10px;
 }
-.service-content h3 {
+.service-content h2 {
     font-size: 2rem;
     padding-bottom: 1rem;
     text-transform: uppercase;
