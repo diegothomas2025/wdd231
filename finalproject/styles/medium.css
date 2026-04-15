@@ -63,4 +63,11 @@
         box-shadow: 0 0 15px gray;
         padding: 2rem;
     }
+    input[type=text],
+    input[type=tel],
+    input[list=cities],
+    form textarea {
+        max-width: 300px;
+        min-width: 300px;
+    }
 }
