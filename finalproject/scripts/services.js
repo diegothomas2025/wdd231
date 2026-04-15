@@ -38,7 +38,7 @@ function displayServices(data) {
         price.textContent = `Price: ${element.price}`;
         duration.textContent = `Duration: ${element.duration}`;
         description.textContent = `Description: ${element.description}`;
-        reserveButton.textContent = "Reservar Ahora";
+        reserveButton.textContent = "Book Now";
         reserveButton.setAttribute('href', 'https://wa.me/5491137663738')
         reserveButton.setAttribute('target', '_blank')
         

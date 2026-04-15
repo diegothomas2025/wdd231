@@ -4,7 +4,7 @@
     "name": "Juan",
     "lastname": "Pérez",
     "location": "General Rodríguez",
-    "comment": "El auto quedó impecable, súper recomendado. Muy puntual y profesional.",
+    "comment": "The car looked spotless, highly recommended. Very punctual and professional.",
     "rating": 5
   },
   {
@@ -12,7 +12,7 @@
     "name": "María",
     "lastname": "Gómez",
     "location": "Moreno",
-    "comment": "Excelente servicio, los tapizados quedaron como nuevos. Muy buena atención.",
+    "comment": "Excellent service, the upholstery looked like new. Great customer service.",
     "rating": 5
   },
   {
@@ -20,7 +20,7 @@
     "name": "Lucas",
     "lastname": "Fernández",
     "location": "Luján",
-    "comment": "Muy conforme con el trabajo, rápido y de calidad. Sin dudas vuelvo a contratar.",
+    "comment": "Very satisfied with the work, fast and high quality. I would definitely hire again.",
     "rating": 4
   }
 ]

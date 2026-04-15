@@ -1,55 +1,55 @@
 [
   {
     "id": 1,
-    "name": "Lavado exterior y pulido",
+    "name": "Exterior wash and polish",
     "price": "$3000",
-    "duration": "1 hora",
-    "description": "Limpieza completa de la carrocería.",
+    "duration": "1 hour",
+    "description": "Complete cleaning of the vehicle's exterior.",
     "image": "images/lavado-exterior.webp",
     "featured": true
   },
   {
     "id": 2,
-    "name": "Acondicionamiento de plásticos exteriores",
+    "name": "Exterior plastic conditioning",
     "price": "$2500",
     "duration": "30 min",
-    "description": "Restauración y protección de plásticos exteriores.",
+    "description": "Restoration and protection of exterior plastics.",
     "image": "images/plasticos-exterior.webp",
     "featured": true
   },
   {
     "id": 3,
-    "name": "Aspirado y cepillado interior completo",
+    "name": "Full interior vacuuming and brushing",
     "price": "$2000",
     "duration": "40 min",
-    "description": "Limpieza profunda de interior y baúl.",
+    "description": "Deep cleaning of interior and trunk.",
     "image": "images/aspirado.webp",
     "featured": true
   },
   {
     "id": 4,
-    "name": "Limpieza de tapizados",
+    "name": "Upholstery cleaning",
     "price": "$8000",
-    "duration": "3 horas",
-    "description": "Limpieza profunda de asientos y alfombras.",
+    "duration": "3 hours",
+    "description": "Deep cleaning of seats and carpets.",
     "image": "images/tapizados.webp",
     "featured": false
   },
   {
     "id": 5,
-    "name": "Limpieza de vidrios interiores",
+    "name": "Interior glass cleaning",
     "price": "$1500",
     "duration": "20 min",
-    "description": "Limpieza completa de vidrios interiores.",
+    "description": "Complete cleaning of interior windows.",
     "image": "images/vidrios.webp",
     "featured": false
   },
   {
     "id": 6,
-    "name": "Pulido de ópticas",
+    "name": "Headlight polishing",
     "price": "$6000",
-    "duration": "1 hora",
-    "description": "Eliminación de opacidad y protección UV.",
+    "duration": "1 hour",
+    "description": "Removal of haze and UV protection.",
     "image": "images/opticas.webp",
     "featured": false
   }

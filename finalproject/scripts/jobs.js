@@ -7,7 +7,6 @@ export async function getJobsData() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
             displayJobs(data);
         } else {
             throw Error (await response.text())
