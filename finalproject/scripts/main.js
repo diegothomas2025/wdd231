@@ -17,3 +17,7 @@ getServiceData()
 // DISPLAY JOBS
 import { getJobsData } from './jobs.js';
 getJobsData()
+
+// DISPLAY THANKYOU PAGE
+import { displayFormData } from './thankyou.js';
+displayFormData()

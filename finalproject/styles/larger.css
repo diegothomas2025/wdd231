@@ -7,9 +7,9 @@
     .hero {
         margin-bottom: -15rem;
     }
-    .package-card {
+    /* .package-card {
         box-shadow: none; 
-    }
+    } */
     /******************************* JOBS SECTION / service.html *******************************/
     #jobs-grid {
         display: grid;
