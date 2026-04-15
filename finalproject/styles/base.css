@@ -12,8 +12,8 @@
     --text-color: #333333;
 
     /* FONTS */
-    --heading-font: "Bebas Neue";
-    --body-font: "Roboto";
+    --heading-font: "Bebas Neue", "Oswald", "Arial Narrow", sans-serif;
+    --body-font: "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
 /******************************* GENERAL STYLE *******************************/
