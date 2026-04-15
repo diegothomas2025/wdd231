@@ -7,7 +7,7 @@ export function displayFormData() {
     results.innerHTML = `
     <p>Comment by: ${myInfo.get('first')} ${myInfo.get('lastname')}</p>
     <p>Location: ${myInfo.get('location')}</p>
+    <p>Overall Rating: ${myInfo.get('rating')} Stars</p>
     <p>Commentary: ${myInfo.get('commentary')}<p/>
-    
     `
 }
