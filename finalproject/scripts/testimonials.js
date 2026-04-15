@@ -34,7 +34,7 @@ function displayTestimonials(data) {
         //BUILD CARD
         fullname.textContent = `${element.name} ${element.lastname}`
         comment.textContent = element.comment;
-        location.textContent = `Ubicacion: ${element.location}`;
+        location.textContent = `Location: ${element.location}`;
         rating.textContent = "⭐".repeat(element.rating)
 
         cardContainer.appendChild(rating);
