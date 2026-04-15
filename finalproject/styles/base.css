@@ -470,6 +470,9 @@ footer {
     text-align: center;
     color: var(--light-color-background);
 }
+footer a {
+    color: inherit;
+}
 .social {
     display: flex;
     column-gap: 8px;
